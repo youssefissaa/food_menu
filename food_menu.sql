@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 03, 2025 at 08:15 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 8.1.4
+-- Generation Time: Jan 04, 2025 at 03:31 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -31,7 +31,7 @@ CREATE TABLE `menu` (
   `id` int(11) NOT NULL,
   `name` varchar(50) DEFAULT NULL,
   `price` decimal(10,2) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `menu`
@@ -54,7 +54,7 @@ CREATE TABLE `orders` (
   `user_id` int(11) DEFAULT NULL,
   `order_details` text DEFAULT NULL,
   `total_price` decimal(10,2) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `orders`
@@ -91,7 +91,7 @@ CREATE TABLE `sauces` (
   `id` int(11) NOT NULL,
   `name` varchar(50) DEFAULT NULL,
   `price` decimal(10,2) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `sauces`
@@ -113,14 +113,14 @@ CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `username` varchar(50) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `username`, `password`) VALUES
-(1, 'joe', '$2y$10$D7Dk/Bx0YXnUplPrY56ObuLv3SeUUhDrDeUNrNr2N2WJPkcpDuh0i');
+(1, 'youssef', '$2y$10$D7Dk/Bx0YXnUplPrY56ObuLv3SeUUhDrDeUNrNr2N2WJPkcpDuh0i');
 
 --
 -- Indexes for dumped tables
